@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorldController {
 	
 	@GetMapping("/helloworld")
-	public String helloWorld() {
-		return "Hello World";
+	public String helloWorld(String nome) {
+		return "Hello World " + nome + "!";
 	}
 	
 	@PostMapping("/hellopost")
