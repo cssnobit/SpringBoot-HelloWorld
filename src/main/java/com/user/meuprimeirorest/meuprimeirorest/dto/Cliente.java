@@ -2,9 +2,6 @@ package com.user.meuprimeirorest.meuprimeirorest.dto;
 
 import javax.validation.constraints.NotNull;
 
-import org.springframework.context.annotation.ComponentScan;
-
-@ComponentScan
 public class Cliente {
 
 	@NotNull
@@ -17,17 +14,11 @@ public class Cliente {
 		
 	}
 	
-	
-	public Cliente(String nome, String sobrenome, Integer idade) {
-		this.nome = nome;
-		this.sobrenome = sobrenome;
-		this.idade = idade;
-	}
-
 
 	public String getNome() {
 		return nome;
 	}
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
